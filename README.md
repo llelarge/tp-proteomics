@@ -172,27 +172,35 @@ df est un dataframe
 Que permettent les méthodes suivantes?
 ###### df.shape
 ```
+Get the number of rowns and columns of the dataframe
 ```
 ###### df.head()
 ```
+Print the first rows of the df
 ```
 ###### df.tail()
 ```
+Print the last rowns of th df
 ```
 ###### df.columns
 ```
+Print the name of the columns
 ```
 ###### df.dtypes
 ```
+Get the type of each column, i.e. the type of the elements in the column
 ```
 ###### df.info
 ```
+Print the first and last rows of the df, as well as the dimensions (= df.head() + df.tail() + df.shape)
 ```
 ###### df.describe()
 ```
+For columns containing numbers, print : count, mean, std, min, 25%, 50%, 75%, max
 ```
 ###### df.dropna()
 ```
+Remove the rows containing error values and print new df.info, i.e. the first and last rows of the df without error values, and its dimensions
 ```
 
 ##### Accès aux éléments d'une table de données
