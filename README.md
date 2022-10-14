@@ -482,7 +482,6 @@ Que peut-on en conclure sur les interactions de ce petit ensemble de protéines 
 
 
 
-
 ```
 
 Afin de replacer ces protéines dans le contexte du réseau d'interaction global de E. coli, 
@@ -490,10 +489,8 @@ ajouter les interacteurs de la première et de la deuxième couche.
 
 Que pouvez-vous en déduire sur les mécanismes activés par la présente de tétracycline ?
 ```
-
-
-
-
+Analyse de surexpression : protéines qui sont utilisées par la cellule de manière concertée, qui sont activées pour répondre à un signal (ici réponse à la Tetracycline).
+L'intérêt de rajouter les interactions de la première couche, c'est de voir le contexte global des interactions protéine-protéine.
 ```
 #### Analyse de sur-représentation des termes GO
 
