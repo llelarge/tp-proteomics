@@ -302,7 +302,7 @@ scale = len(_)*dx # scale accordingly
 ax.plot(x, norm.pdf(x, mu, sigma)*scale) # compute theoritical PDF and draw it
 ```
 
-![Histogramme à inserez ici](histogram_log2FC.png "Title")
+![Histogramme à inserez ici](histogram_log2_abundance_corrected_ratio.png "histogram of log2 abundance corrected ratio")
 
 ##### 5. Quelles remarques peut-on faire à l'observation de l'histogramme et de la loi théorique?
 
@@ -322,7 +322,7 @@ Sont condidérées comme surabondantes les proteines remplissant ces deux critè
 * <img src="https://render.githubusercontent.com/render/math?math=\text{Log}_2(\text{abundance ratio})\gt\mu%2B\sigma">  
 * <img src="https://render.githubusercontent.com/render/math?math=\text{p-value}<0.001">
 
-![Volcano plot + quadrant à inserez ici](histogram_log2FC.png "Title")
+![Volcano plot + quadrant à inserez ici](Volcano_plot.png "Volcano plot of -Log10(p-value) as a function of Log2 abundance ratio")
 
 ### Analyse Fonctionelle de pathway
 
