@@ -284,7 +284,8 @@ df.loc[ df['Gene Symbol'].isin(['fadR', 'arcA'] ) ]
 
 ##### 3. A partir de cette échantillon de ratio d'abondance,  estimez la moyenne <img src="https://render.githubusercontent.com/render/math?math=\mu"> et l'ecart-type <img src="https://render.githubusercontent.com/render/math?math=\sigma"> d'une loi normale.
 ```
-
+mu = -0.646713
+sigma = 0.467234
 
 ```
 
@@ -306,7 +307,8 @@ ax.plot(x, norm.pdf(x, mu, sigma)*scale) # compute theoritical PDF and draw it
 ##### 5. Quelles remarques peut-on faire à l'observation de l'histogramme et de la loi théorique?
 
 ```
-
+Les valeurs de l'histogramme sont assez éloignées de la loi théorique.
+L'histogramme ne suit pas une loi normale centrée réduite
 
 ```
 
@@ -330,9 +332,20 @@ Nous allons implementer une approche ORA (Over Representation Analysis) naive.
 
 Quelles sont leurs identifiants UNIPROT ?
 ``` 
-
-
-
+P0A8V6
+P0A9Q1
+P02358
+P0ACF8
+P62399
+P0A905
+P76506
+P13036
+P10384
+P06971
+P0A910
+P06996
+P76344
+P02931
 ```
 
 #### 2. Lister les termes GO portés par ces protéines surabondates
@@ -435,7 +448,7 @@ Valider le mapping produit par STRING en clickant sur 'Continue'.
 Combien d'interactions contient ce réseau ?
 
 ```
-
+Ce réseau contient 19 interactions
 
 
 
@@ -451,10 +464,13 @@ Combien d'interactions sont supportées par chaque source ('Textmining', 'Experi
 
 Hint: l'onglet Analysis, donne accès aux nombre des interactions du réseau.
 ```
-
-
-
-
+'Textmining' : 16
+'Experiments' : 4
+'Databases' : 3
+'Co-expression' : 1
+'Neighborhood' : 0
+'Gene Fusion' : 0
+'Co-occurence' : 2
 ```
 
 #### Analyse du réseau des protéines sur-exprimées dans le contexte du réseau global.
